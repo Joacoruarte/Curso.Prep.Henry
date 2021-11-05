@@ -1,0 +1,22 @@
+for: 
+        El for es un bucle, que su funcion es tomar el valor de un numero variable que le asignemos  
+        y dada la condicion que le apliquemos, que puede ser ser de un numero hasta otro numero, 
+        haga una funcion que por lo general es incrementar 1 en 1 o decrementar 1 en 1. 
+
+Operadores booleanos: 
+
+Existen: && = Es como decir la palabra 'Y' 
+         || = Es como decir la palabra 'O' 
+         !  = Es como decir la palabra 'NO' 'Lo contrario' 'Diferente' 
+
+&& se puede usar para que en una condicion que haya dos parametros evalue uno y otro 
+   siempre que se use este operador booleano tiene que cumplirse ambas condiciones 
+   de lo contrario me saldra false, si se cumplen me devuelve true 
+
+|| Este booleano hace que se cumpla una condicon o otra, siempre que se cumpla una 
+   se ejecutara porque es un true y si las dos condiciones no se cumplen arroja false 
+
+! Este booleano hace que una condicion se cumpla si es distinta a la otra, o tambien 
+  para invertirla por ejemplo: si  10 + 1 ! 9 + 2 = en este caso arroja false  
+                               si  10 + 1 ! 9 + 1 = en este caso arroja true - Se ejecuta una linea de codigo   
+
