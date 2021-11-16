@@ -201,7 +201,7 @@ function tablaDelSeis(){
   var arraynueva = [];
  
   for(var i = 0; i < 11; i++){ 
-    arraynueva.push(i * 6)
+    arraynueva.push(6 * i )
   } 
 
   return arraynueva;
