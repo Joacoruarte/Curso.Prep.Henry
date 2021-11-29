@@ -236,9 +236,6 @@ function doWhile(numero) {
  return numero;
 }
 
-Array.push(); "Este metodo me agrega al final de una array un elemento nuevo" 
-Array.unshift(); "Este metodo me agrega al principio de una array un elemento nuevo" 
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
