@@ -1,0 +1,20 @@
+* Objetos:  
+Los objetos son cajas que almacenan cosas, es decir yo dentro de un objeto puedo guardar por ejemplo un nombre o un numero de telefono,  
+pero para cada valor que le agrego a la caja debo agregarle un nombre que lo indentifique como tal, para ello voy a agregar mi nombre: Joaquin 
+pero antes de definir mi nombre voy a poner algo donde yo indentifique dicho nombre; por ej:  nombre: Joaquin ; entonces cuando busque a = nombre; dentro de nombre va a estar almacenado el valor Joaquin que es un string ""; 
+
+
+* Propiedades:  
+las propiedades provienen de los objetos, esto hace referencia a un nombre que le damos a un valor que contiene por ejemplo si yo tengo la propiedad llamada Edad , 
+indentifico que dentro de la propiedad edad va a haber un valor numerico con la edad de dicha persona 
+
+* Metodos: 
+Los metodos son las funciones dentro de un objeto, osea que cuando nombramos que hay un metodo dentro de una propiedad, 
+estamos refiriendonos a que tiene una function() dentro de esa propiedad y que esa funcion al ser invocada realiza algo que le indiquemos 
+
+* Bulce for..in: 
+Con este bucle podemos recorrer cada valor de las propiedades de un objeto y realizar una accion para cada una  
+
+* Notacion de puntos vs Notacion de corchetes: 
+Con la notacion de corchetes basicamente llamamos al nombre del objeto y le indicamos el nombre de una propiedad que contenga entre corchetes  
+y con comillas adentro y la notacion de puntos cumple la misma funcion solo que es mas corto y facil de escribir
