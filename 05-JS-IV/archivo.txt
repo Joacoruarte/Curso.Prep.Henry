@@ -17,4 +17,4 @@ Con este bucle podemos recorrer cada valor de las propiedades de un objeto y rea
 
 * Notacion de puntos vs Notacion de corchetes: 
 Con la notacion de corchetes basicamente llamamos al nombre del objeto y le indicamos el nombre de una propiedad que contenga entre corchetes  
-y con comillas adentro y la notacion de puntos cumple la misma funcion solo que es mas corto y facil de escribir
+y con comillas adentro y la notacion de puntos cumple la misma funcion solo que es mas corto y facil de escribir 
