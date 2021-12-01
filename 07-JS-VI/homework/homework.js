@@ -5,7 +5,7 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:  
   
-  return nombre[0].toUpperCase() + nombre.slice(1);
+return nombre[0].toUpperCase() + nombre.slice(1);
 }
 
 function invocarCallback(cb) {
@@ -19,9 +19,8 @@ function operacionMatematica(n1, n2, cb) {
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:  
  
-  return cb(n1 , n2);
+ return cb(n1 , n2);
 
-  
 
 }
 
@@ -30,14 +29,13 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:  
-  var resultado = 0; 
-
-  for(var i = 0 ; i < numeros.length; i++){ 
-    resultado = resultado + numeros[i];
+  var suma = 0; 
+  
+  for(var i = 0; i < numeros.length ; i++){ 
+    suma = suma + numeros[i];
   } 
 
-  return cb(resultado);
-  
+  return cb(suma);
 }
 
 function forEach(array, cb) {
@@ -45,9 +43,11 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código: 
 
-  array.forEach(function(elemento){ 
-    cb(elemento);
+  var arr = array.forEach(function(elemento){ 
+    return cb(elemento);
   }) 
+
+  return arr
 
   
 
@@ -59,26 +59,24 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:  
-  var nuevoarray = array.map(cb); 
   
-  return nuevoarray;
-
- 
- 
+  
+  
+  var newArr = array.map(cb)
+  return newArr;
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código: 
-  var newarray = []; 
-
-  for(var i = 0; i < array.length ; i++){ 
+  var newarr = []; 
+  for(var i = 0; i < array.length; i++){ 
     if(array[i][0] === "a"){ 
-    newarray.push(array[i]);
+      newarr.push(array[i]);
     }
-  } 
-  return newarray;
+  }
+  return newarr;
 }
 
 // No modificar nada debajo de esta línea
