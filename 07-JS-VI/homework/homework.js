@@ -65,7 +65,6 @@ function map(array, cb) {
   var newArr = array.map(function(x){ 
     return cb(x);
   }) 
-
   return newArr;
  
 }
