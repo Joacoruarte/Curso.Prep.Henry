@@ -1,0 +1,12 @@
+* Prototype: 
+Al momento de creear una clase que es una plantilla de objetos, por ejemplo un auto 
+puede tener distintas marcas de auto, ej: audi , VW , BMW , Mercedez Benz. con el prototype 
+yo le ordeno que busque el objeto prototipo dentro de mi constructor de clases Auto, el prototipo  
+puede ser un auto diferente o un metodo o un conjunto de objetos que contengas disntintos metodos(funciones). 
+
+
+* constructor (clases):  
+Cuando creamos un constructor nos basamos en una clase siempre, esta clase puede llamarse por ejemplo persona, 
+mi constructor de clase persona, me va a indicar propiedades que pueden tener las personas, (Clase Persona), por ej 
+nombre apellido edad, y de ahi yo creo una plantilla donde pueda agregar a las personas segun nombre apellido y edad, 
+con esto por ejemplo al agregar a mi pagina un nuevo usuario , (que es una persona) va a tener que pasarme su nombre apellido y edad. 
