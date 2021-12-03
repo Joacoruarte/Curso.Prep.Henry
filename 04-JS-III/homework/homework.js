@@ -244,17 +244,14 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:  
-let newArr = []; 
-
-for(var i = 0 ; i < array.length; i++){ 
-  if(array[i] > 100 && array[i] <= 200){ 
-    newArr.push(array[i]);
-  }
+  var newarr = []; 
+  for(var i = 0 ; i < array.length; i++){ 
+    if(array[i] > 100 && array[i] <= 200){
+      newarr.push(array[i]); 
+    }
+  } 
+  return newarr;
 }
- return newArr;
-}
-
-
 function breakStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array. 
