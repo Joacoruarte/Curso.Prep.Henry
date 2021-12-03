@@ -14,9 +14,10 @@ function deObjetoAmatriz(objeto){
 // objeto = Object.entries(objeto); 
 
 // return objeto; 
-    var array =[]; 
+    var array = []; 
+
     for(var i in objeto){ 
-      array.push([i , objeto[i]]); 
+      array.push([i , objeto[i]])
     } 
 
     return array;
@@ -30,32 +31,31 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  var obj = {};  
-  for(var i = 0; i < string.length; i++){ 
+  var obj = {}; 
+  for(var i = 0 ; i < string.length ; i++){ 
     if(Object.keys(obj).includes(string[i])){ 
       obj[string[i]] = obj[string[i]] + 1 
       continue
     } 
     obj[string[i]] = 1
-  }    
+  } 
+
   return obj;
 }
-
-
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí 
-var mayuscula = ""; 
-var minuscula = "";
+  var mayuscula = ""; 
+  var minuscula = ""; 
   for(var i = 0 ; i < s.length; i++){ 
     if(s[i] === s[i].toUpperCase()){ 
-      mayuscula += s[i];
+      mayuscula += s[i]
     } 
     else{ 
-      minuscula += s[i];
-    }
+      minuscula += s[i]
+    }  
   } 
   return mayuscula + minuscula;
 }
@@ -83,34 +83,38 @@ function capicua(numero){
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí 
 
-  var numero = numero.toString(); 
-  var numero2 = ""; 
+  let numero1 = numero.toString(); 
+  let numero2 = numero1.split("").reverse().join(""); 
 
-  numero2 = numero.split("").reverse().join(""); 
-
-  if(numero === numero2){ 
-    return "Es capicua";
+  if(numero1 === numero2){ 
+    return "Es capicua"
   }else{ 
     return "No es capicua";
-  } 
+  }
 
 }
-
-
 function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí 
   
-  
-  var cadena1 = ""; 
+  var cadenanueva = ""; 
 
-  for(var i = 0 ; i < cadena.length; i++){  
-    if(cadena[i] !== "a" && cadena[i] !== "b" && cadena[i] !== "c"){
-    cadena1 += cadena[i] 
-    }
-  } 
-  return cadena1;
+  for(var i = 0; i < cadena.length; i++){ 
+    if(!(cadena[i] === "a" || cadena[i] === "b" || cadena[i] === "c")){ 
+      cadenanueva += cadena[i];
+    } 
+  }
+ return cadenanueva; 
+
+// cadena = cadena.replace("a", "");
+// cadena = cadena.replace("b", "");
+// cadena =  cadena.replace("c", ""); 
+
+// return cadena; 
+
+// var cadenamodificada = cadena.replace(/[abc]/g, ''); 
+// return cadenamodificada;
 }
 
 
@@ -128,10 +132,10 @@ function sortArray(arr) {
   //   arr[j+1] = str; 
   // }
   // return arr;
-  var orden = arr.sort(function(a , b){ 
+  var ordenamelos = arr.sort(function(a,b){ 
     return a.length - b.length;
-  }) 
-  return orden;
+  })  
+  return ordenamelos;
 }
 
 
@@ -142,15 +146,16 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí   
 
-  var newArr = []; 
+  var arreglovacio = []; 
+
   for(var i = 0 ; i < arreglo1.length; i++){ 
-    for(var j = 0 ; j < arreglo2.length; j++){  
-      if(arreglo1[i] === arreglo2[j]){
-      newArr.push(arreglo1[i]);
+    for(var j = 0; j < arreglo2.length; j++){ 
+      if(arreglo1[i] === arreglo2[j]){ 
+        arreglovacio.push(arreglo1[i]);
+      }
     }
   } 
- }
- return newArr;
+  return arreglovacio;
 }
 
 // No modificar nada debajo de esta línea
