@@ -36,12 +36,14 @@ function sumarArray(numeros, cb) {
   // } 
 
   // return cb(suma); 
-
+ 
   var suma = numeros.reduce(function(acc , elemento){ 
     return acc + elemento;
   },0); 
+  
+  cb(suma); 
 
-  cb(suma);
+  
 }
 
 function forEach(array, cb) {
@@ -49,12 +51,11 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código: 
 
-  var arr = array.forEach(function(elemento){ 
-    return cb(elemento);
+  var foreach = array.forEach(function(el){ 
+    return cb(el);
   }) 
 
-  return arr
-
+  return foreach;
   
 
 
@@ -67,11 +68,12 @@ function map(array, cb) {
   //Tu código:  
   
   
-  
-  var newArr = array.map(function(x){ 
-    return cb(x);
+  var maps = array.map(function(x){ 
+    return cb(x); 
   }) 
-  return newArr;
+
+  return maps;
+ 
  
 }
 
