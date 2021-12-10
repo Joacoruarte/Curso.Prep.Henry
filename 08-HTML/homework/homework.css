@@ -1,0 +1,42 @@
+#contenedor{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+h1{ 
+    color: darkorange; 
+    text-align: center;
+}  
+h3,h4{ 
+    text-align: center;
+} 
+
+img{  
+    width: 400px; 
+    height: 200px;
+}  
+.imagen1{ 
+    margin: 10px;
+} 
+.imagen2{ 
+    margin: 10px;
+}
+
+#thirdDiv{  
+    background-color: darkorange;
+    width: 500px; 
+    height: auto;  
+    padding: 50px; 
+    border: 2px solid rgb(53, 45, 45);
+} 
+
+#spanId{ 
+    font-size: 18px; 
+    margin: 50px; 
+    margin-right: 2px;
+} 
+
+li{ 
+    list-style: none;
+} 
